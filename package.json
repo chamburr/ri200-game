@@ -11,7 +11,8 @@
     "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
     "lint:prettier": "prettier -c --ignore-path .gitignore .",
     "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
-    "format": "prettier -wl --ignore-path .gitignore  . && yarn lint:js --fix && yarn lint:style --fix"
+    "format": "prettier -wl --ignore-path .gitignore  . && yarn lint:js --fix && yarn lint:style --fix",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "bootstrap": "^4.6.2",
@@ -33,9 +34,10 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-vue": "^9.4.0",
-    "sass": "^1.54.5",
     "postcss-html": "^1.5.0",
     "prettier": "^2.7.1",
+    "push-dir": "^0.4.1",
+    "sass": "^1.54.5",
     "sass-loader": "^10.1.1",
     "stylelint": "^14.11.0",
     "stylelint-config-prettier": "^9.0.3",

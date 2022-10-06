@@ -2,6 +2,10 @@ export default {
   target: 'static',
   ssr: false,
 
+  router: {
+    base: '/ri200-game/'
+  },
+
   head: {
     title: '人物匹配',
     htmlAttrs: {
