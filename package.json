@@ -1,0 +1,45 @@
+{
+  "name": "ri200-game",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
+    "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
+    "lint:prettier": "prettier -c --ignore-path .gitignore .",
+    "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
+    "format": "prettier -wl --ignore-path .gitignore  . && yarn lint:js --fix && yarn lint:style --fix"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "bootstrap-vue": "^2.22.0",
+    "canvas-confetti": "^1.5.1",
+    "core-js": "^3.24.1",
+    "nuxt": "^2.15.8",
+    "vue": "^2.6.14",
+    "vuex": "^3.6.2",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "@nuxt/types": "^2.15.8",
+    "@nuxtjs/eslint-module": "^3.1.0",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/stylelint-module": "^4.1.0",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^3.2.0",
+    "eslint-plugin-vue": "^9.4.0",
+    "sass": "^1.54.5",
+    "postcss-html": "^1.5.0",
+    "prettier": "^2.7.1",
+    "sass-loader": "^10.1.1",
+    "stylelint": "^14.11.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^28.0.0"
+  }
+}

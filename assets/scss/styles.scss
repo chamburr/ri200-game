@@ -1,0 +1,14 @@
+@import '_variables';
+
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-vue/src/index';
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s ease-in;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
