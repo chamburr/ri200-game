@@ -11,7 +11,7 @@
     "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
     "lint:prettier": "prettier -c --ignore-path .gitignore .",
     "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
-    "format": "prettier -wl --ignore-path .gitignore  . && yarn lint:js --fix && yarn lint:style --fix",
+    "format": "prettier -wl --ignore-path .gitignore .",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {

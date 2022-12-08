@@ -4,7 +4,7 @@
       <template #header>
         <div class="py-2">
           <p class="h4 mb-3">人物匹配</p>
-          <BProgress class="rounded-pill mx-4 mb-1" :value="progress" height="1em"/>
+          <BProgress class="rounded-pill mx-4 mb-1" :value="progress" height="1em" />
           <small>已完成{{ progress }}%</small>
         </div>
       </template>
@@ -12,9 +12,19 @@
         <div class="py-2">
           <h1 class="h4 mb-4 font-weight-normal">{{ question }}</h1>
           <div class="mb-3" v-if="question.includes('生日')">
-            <BFormSelect class="w-25 mx-2" v-model="birthday[0]" @change="updateBirthday()" :options="months"/>
+            <BFormSelect
+              class="w-25 mx-2"
+              v-model="birthday[0]"
+              @change="updateBirthday()"
+              :options="months"
+            />
             月
-            <BFormSelect class="w-25 mx-2" v-model="birthday[1]" @change="updateBirthday()" :options="days"/>
+            <BFormSelect
+              class="w-25 mx-2"
+              v-model="birthday[1]"
+              @change="updateBirthday()"
+              :options="days"
+            />
             日
           </div>
           <div v-else>
@@ -80,11 +90,11 @@ export default {
   },
   computed: {
     months() {
-      return Array.from({length: 12}, (_, i) => i + 1)
+      return Array.from({ length: 12 }, (_, i) => i + 1)
     },
     days() {
       let length = new Date(2020, this.birthday[0], 0).getDate()
-      return Array.from({length}, (_, i) => i + 1)
+      return Array.from({ length }, (_, i) => i + 1)
     },
     constellation() {
       let s = '摩羯水瓶双鱼白羊金牛双子巨蟹狮子处女天秤天蝎射手魔羯'
@@ -130,11 +140,11 @@ export default {
         for (let element of [
           ...new Set(this.allQuestions[index].options.map(element2 => element2.value).flat())
         ]) {
-          results[element] = results[element] || {value: 0, asked: 0}
+          results[element] = results[element] || { value: 0, asked: 0 }
           results[element].asked++
         }
         for (let element of this.allQuestions[index].options[response].value) {
-          results[element] = results[element] || {value: 0, asked: 0}
+          results[element] = results[element] || { value: 0, asked: 0 }
           results[element].value++
         }
       }

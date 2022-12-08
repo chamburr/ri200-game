@@ -8,7 +8,7 @@
       </template>
       <template #default>
         <div class="py-2">
-          <img class="result-image rounded-circle mb-4" :src="image" alt=""/>
+          <img class="result-image rounded-circle mb-4" :src="image" alt="" />
           <h1 class="h4 mb-2 font-weight-normal">你和{{ info.name }}最相近！</h1>
           <p>匹配度：{{ result.value }}%</p>
           <p>{{ info.description }}{{ description }}</p>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import {mapGetters} from 'vuex'
+import { mapGetters } from 'vuex'
 import confetti from 'canvas-confetti'
 import characters from '~/assets/data/characters.json'
 
@@ -36,7 +36,7 @@ export default {
       result: {}
     }
   },
-  middleware({store, redirect}) {
+  middleware({ store, redirect }) {
     if (store.getters['isEmpty']) redirect('/')
   },
   computed: {
@@ -64,7 +64,7 @@ export default {
     let maximum = 0
     for (let index in this.questions) {
       for (let element of this.questions[index].options[this.response[index]].value) {
-        results[element] = results[element] || {value: 0, questions: []}
+        results[element] = results[element] || { value: 0, questions: [] }
         results[element].value++
         results[element].questions.push({
           response: this.questions[index].options[this.response[index]].name,
@@ -85,7 +85,7 @@ export default {
                 : acc,
             0
           )) *
-        100
+          100
       )
       if (results[key].value > maximum) {
         maximum = results[key].value
@@ -106,13 +106,13 @@ export default {
         particleCount: 150,
         angle: 315,
         spread: 100,
-        origin: {x: -0.1, y: -0.1}
+        origin: { x: -0.1, y: -0.1 }
       })
       confetti({
         particleCount: 150,
         angle: 225,
         spread: 100,
-        origin: {x: 1.1, y: -0.1}
+        origin: { x: 1.1, y: -0.1 }
       })
     }, 250)
   },

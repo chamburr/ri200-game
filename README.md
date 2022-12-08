@@ -8,7 +8,8 @@ Visit https://chamburr.github.io/ri200-game/ to play.
 
 Follow these steps to run the application.
 
-1. Install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/getting-started/install).
+1. Install [Node.js](https://nodejs.org/en/download/) and
+   [Yarn](https://yarnpkg.com/getting-started/install).
 2. Install dependencies with `yarn install`.
 3. Run `yarn dev` for development or `yarn generate && yarn start` for production. Success!
 
