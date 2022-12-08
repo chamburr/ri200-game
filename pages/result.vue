@@ -46,6 +46,7 @@ export default {
     description() {
       if (!this.completed) return
       let description = this.result.questions
+        .filter(element => element.description !== null)
         .map(element => element.description.replace('__', element.response))
         .join('、')
       return `你和${this.info.name}一样${description}。`
