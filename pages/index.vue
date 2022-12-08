@@ -2,7 +2,7 @@
   <div>
     <BCard class="bg-white shadow py-4 px-2">
       <div class="px-4 mb-4">
-        <img class="py-4 w-50" src="~/assets/images/logo.png" alt="Logo"/>
+        <img class="py-4 w-50" src="~/assets/icon.png" alt="Logo"/>
       </div>
       <h1 class="font-weight-bold mb-4">人物匹配</h1>
       <p class="h5 mb-5">
