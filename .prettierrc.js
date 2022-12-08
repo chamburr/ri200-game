@@ -4,5 +4,13 @@ module.exports = {
   proseWrap: 'always',
   semi: false,
   singleQuote: true,
-  trailingComma: 'none'
+  trailingComma: 'none',
+  overrides: [
+    {
+      files: '**/*.json',
+      options: {
+        printWidth: 200
+      }
+    }
+  ]
 }
