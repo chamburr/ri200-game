@@ -5,51 +5,51 @@
     "required": true,
     "options": [
       {
-        "name": "白羊座",
+        "name": "白羊座（Aries）",
         "value": ["吴恩达"]
       },
       {
-        "name": "金牛座",
+        "name": "金牛座（Taurus）",
         "value": ["吴作栋"]
       },
       {
-        "name": "双子座",
+        "name": "双子座（Gemini）",
         "value": ["林荣福", "宋旺相", "詹道存"]
       },
       {
-        "name": "巨蟹座",
+        "name": "巨蟹座（Cancer）",
         "value": ["莱佛士", "沙易姆"]
       },
       {
-        "name": "狮子座",
+        "name": "狮子座（Leo）",
         "value": ["尤索夫", "本杰明", "柯婷文"]
       },
       {
-        "name": "处女座",
+        "name": "处女座（Virgo）",
         "value": ["李光耀", "陈洁仪"]
       },
       {
-        "name": "天秤座",
+        "name": "天秤座（Libra）",
         "value": ["林文庆", "陈振声"]
       },
       {
-        "name": "天蝎座",
+        "name": "天蝎座（Scorpio）",
         "value": ["陈民亮", "许通美", "王乙康", "哈勒特"]
       },
       {
-        "name": "射手座",
+        "name": "射手座（Sagittarius）",
         "value": []
       },
       {
-        "name": "摩羯座",
+        "name": "摩羯座（Capricorn）",
         "value": ["莫里森", "叶耀宗", "卢斯迪"]
       },
       {
-        "name": "水瓶座",
+        "name": "水瓶座（Aquarius）",
         "value": ["郑春茂"]
       },
       {
-        "name": "双鱼座",
+        "name": "双鱼座（Pisces）",
         "value": ["吕俊旸", "拉惹勒南"]
       }
     ]

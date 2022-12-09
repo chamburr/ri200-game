@@ -123,7 +123,7 @@ export default {
       if (!this.days.includes(this.birthday[1])) {
         this.birthday = [this.birthday[0], this.days[this.days.length - 1]]
       }
-      this.selected = this.options.indexOf(this.constellation)
+      this.selected = this.options.findIndex(element => element.startsWith(this.constellation))
     },
     getQuestions() {
       let count = Math.max(
