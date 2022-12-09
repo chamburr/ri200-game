@@ -16,7 +16,7 @@
       </template>
       <template #footer>
         <div class="d-flex justify-content-end py-2">
-          <BButton class="px-4 mr-3" variant="primary" pill>分享</BButton>
+          <BButton class="px-4 mr-3" variant="primary" pill @click="share()">分享</BButton>
           <BButton class="px-4" variant="outline-primary" pill @click="restart()">重新开始</BButton>
         </div>
       </template>
@@ -118,6 +118,15 @@ export default {
     }, 250)
   },
   methods: {
+    share() {
+      if (!navigator.share) {
+        alert('抱歉，你使用的浏览器暂不支持分享功能！')
+        return
+      }
+      navigator.share({
+        text: `我在RI200人物匹配游戏中匹配到了${this.info.name}，相似度高达${this.result.value}%！你也快来试试看吧！网站：https://chamburr.github.io/ri200-game/`,
+      })
+    },
     restart() {
       this.$router.push('/game')
     }
