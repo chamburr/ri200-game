@@ -1,44 +1,33 @@
-const title = '人物匹配'
-const description = 'Lorem ipsum dolor sit amet'
-const domain = 'chamburr.github.io'
-const path = '/ri200-game/'
-
 export default {
   target: 'static',
   ssr: false,
 
   router: {
-    base: path
+    base: '/ri200-game/'
   },
 
   head: {
-    title: title,
+    title: 'RI200人物匹配',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: description },
-      { name: 'og:title', content: title },
-      { name: 'og:type', content: 'website' },
-      { name: 'og:url', content: `https://${domain}${path === '/' ? '' : path}` },
-      { name: 'og:image', content: `https://${domain}${path}apple-touch-icon.png` },
-      { name: 'og:site_name', content: description },
-      { name: 'og:description', content: description },
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:title', content: title },
-      { name: 'twitter:image', content: `https://${domain}${path}apple-touch-icon.png` },
-      { name: 'twitter:description', content: description }
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          '你想不想知道你和那个莱书的伟大先驱或杰出校友最相像呢？现在就来回答几个小问题来看看吧！'
+      }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: `${path}favicon.ico` },
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${path}favicon-32x32.png` },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: `${path}favicon-16x16.png` },
-      { rel: 'apple-touch-icon', sizes: '180x180', href: `${path}apple-touch-icon.png` },
-      { rel: 'mask-icon', href: `${path}safari-pinned-tab.svg`, color: '#ffffff' },
-      { rel: 'manifest', href: `${path}site.webmanifest` },
-      { rel: 'canonical', href: `https://${domain}${path === '/' ? '' : path}` }
+      { rel: 'icon', type: 'image/x-icon', href: `favicon.ico` },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: `favicon-32x32.png` },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: `favicon-16x16.png` },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: `apple-touch-icon.png` },
+      { rel: 'mask-icon', href: `safari-pinned-tab.svg`, color: '#ffffff' },
+      { rel: 'manifest', href: `site.webmanifest` }
     ]
   },
 
