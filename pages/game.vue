@@ -96,12 +96,11 @@ export default {
       let length = new Date(2020, this.birthday[0], 0).getDate()
       return Array.from({ length }, (_, i) => i + 1)
     },
-    birthMonth() {
-      return (
-        ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二'][
-          this.birthday[0] - 1
-        ] + '月'
-      )
+    constellation() {
+      let s = '摩羯水瓶双鱼白羊金牛双子巨蟹狮子处女天秤天蝎射手魔羯'
+      let arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22]
+      let i = this.birthday[0] * 2 - (this.birthday[1] < arr[this.birthday[0] - 1] ? 2 : 0)
+      return s.substr(i, 2) + '座'
     },
     question() {
       return this.questions[this.index].name
@@ -124,7 +123,7 @@ export default {
       if (!this.days.includes(this.birthday[1])) {
         this.birthday = [this.birthday[0], this.days[this.days.length - 1]]
       }
-      this.selected = this.options.indexOf(this.birthMonth)
+      this.selected = this.options.indexOf(this.constellation)
     },
     getQuestions() {
       let count = Math.max(
