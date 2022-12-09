@@ -124,7 +124,7 @@ export default {
         return
       }
       navigator.share({
-        text: `我在RI200人物匹配游戏中匹配到了${this.info.name}，相似度高达${this.result.value}%！你也快来试试看吧！网站：https://chamburr.github.io/ri200-game/`,
+        text: `我在RI200人物匹配游戏中匹配到了${this.info.name}，相似度高达${this.result.value}%！你也快来试试看吧！网站：https://chamburr.github.io/ri200-game/`
       })
     },
     restart() {
