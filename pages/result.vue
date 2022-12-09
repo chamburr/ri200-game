@@ -3,7 +3,7 @@
     <BCard class="bg-white shadow">
       <template #header>
         <div class="py-2">
-          <p class="h4 mb-0">人物匹配</p>
+          <p class="h4 mb-0">RI200人物匹配</p>
         </div>
       </template>
       <template #default>
