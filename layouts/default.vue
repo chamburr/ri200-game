@@ -12,7 +12,7 @@ export default {}
 
 <style scoped lang="scss">
 #app {
-  background-image: url("~/assets/background.jpg");
+  background-image: url('~/assets/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
