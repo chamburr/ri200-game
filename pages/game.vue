@@ -3,7 +3,7 @@
     <BCard class="bg-white shadow">
       <template #header>
         <div class="py-2">
-          <p class="h4 mb-3">RI200人物匹配</p>
+          <p class="h4 mb-3">莱看你是谁？</p>
           <BProgress class="rounded-pill mx-4 mb-1" :value="progress" height="1em" />
           <small>已完成{{ progress }}%</small>
         </div>

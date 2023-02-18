@@ -3,7 +3,7 @@
     <BCard class="bg-white shadow">
       <template #header>
         <div class="py-2">
-          <p class="h4 mb-0">RI200人物匹配</p>
+          <p class="h4 mb-0">莱看你是谁？</p>
         </div>
       </template>
       <template #default>
@@ -124,7 +124,7 @@ export default {
         return
       }
       navigator.share({
-        text: `我在RI200人物匹配游戏中匹配到了${this.info.name}，相似度高达${this.result.value}%！你也快来试试看吧！网站：https://chamburr.github.io/ri200-game/`
+        text: `我在“莱看你是谁？”游戏中匹配到了${this.info.name}，相似度高达${this.result.value}%！你也快来试试看吧！网站：https://chamburr.github.io/ri200-game/`
       })
     },
     restart() {

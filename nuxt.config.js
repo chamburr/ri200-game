@@ -6,7 +6,7 @@ export default {
   },
 
   head: {
-    title: 'RI200人物匹配',
+    title: '莱看你是谁？',
     htmlAttrs: {
       lang: 'en'
     },
