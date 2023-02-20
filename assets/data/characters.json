@@ -60,7 +60,7 @@
     "description": "林文庆是个名医生。他从小父母双亡、生活艰辛。他凭着不懈奋斗的精神，获得了女皇奖学金。他和宋旺相爵士一起创建了哈勒特图书馆！"
   },
   {
-    "name": "本杰明",
+    "name": "薛尔思",
     "image": "benjamin_sheares.jpg",
     "description": "薛尔思是我国第二任总统。担任总统之前，他还是一位著名的妇产科医生，医术十分高明。薛尔思是我校最著名的校友之一，他于1922年毕业。"
   },
@@ -107,21 +107,21 @@
   {
     "name": "古玛兰",
     "image": "kumaran_rasappan.jpg",
-    "description": ""
+    "description": "古玛兰是一名富有善心的医生。他常常会到乡村地区，为民众提供医疗服务。他还是第一位登上珠穆朗玛峰的新加坡医生呢！"
   },
   {
     "name": "卢斯迪",
     "image": "khairul_rusydi.jpg",
-    "description": ""
+    "description": "卢斯迪成立了一所创业学校（Reactor School），成功地协助了近万名年轻同学追逐创业梦想。"
   },
   {
     "name": "柯婷文",
     "image": "quah_ting_wen.jpg",
-    "description": ""
+    "description": "柯婷文是新加坡著名的游泳健将，在多个世界级的运动会上为国家争光。她还在自由泳项目创下了多个国家记录！"
   },
   {
     "name": "沙易姆",
     "image": "uk_shyam.jpg",
-    "description": ""
+    "description": "沙易姆是我国百米赛跑纪录的保持者。他在学生时代凭借自己的运动天赋，多次在全国校际运动会中夺冠。"
   }
 ]
