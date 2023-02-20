@@ -3,7 +3,9 @@
     <BCard class="bg-white shadow">
       <template #header>
         <div class="py-2">
-          <p class="h4 mb-0">莱看你是谁？</p>
+          <p class="h4 mb-0">
+            <span id="title-span" class="mx-2 px-1 rounded">莱</span>看你是谁？
+          </p>
         </div>
       </template>
       <template #default>
@@ -135,6 +137,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#title-span {
+  display: inline-block;
+  transform: rotate(-10deg);
+  color: green;
+  border: solid green 2px;
+}
+
 .result-image {
   width: 150px;
 }

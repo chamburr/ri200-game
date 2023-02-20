@@ -3,7 +3,9 @@
     <BCard class="bg-white shadow">
       <template #header>
         <div class="py-2">
-          <p class="h4 mb-3">莱看你是谁？</p>
+          <p class="h4 mb-3">
+            <span id="title-span" class="mx-2 px-1 rounded">莱</span>看你是谁？
+          </p>
           <BProgress class="rounded-pill mx-4 mb-1" :value="progress" height="1em" />
           <small>已完成{{ progress }}%</small>
         </div>
@@ -210,6 +212,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+#title-span {
+  display: inline-block;
+  transform: rotate(-10deg);
+  color: green;
+  border: solid green 2px;
+}
+
 .progress {
   background-color: $gray-300;
 }
