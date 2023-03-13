@@ -17,7 +17,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          '你想不想知道你和哪个莱佛士书院的先驱或校友最相像呢？现在就回答几个小问题来看看吧！'
+          '你想不想知道你和莱佛士书院的哪位先驱或校友最相像呢？现在就回答几个小问题来看看吧！'
       }
     ],
     link: [
